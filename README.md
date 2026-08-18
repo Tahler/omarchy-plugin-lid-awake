@@ -1,13 +1,21 @@
-# Stay Awake With Lid Closed
+# omarchy-plugin-lid-awake
 
-Prevents suspend when the laptop lid closes for the current session while preserving Omarchy's normal lock behavior.
+An Omarchy shell plugin that, when active, prevents suspend when the laptop lid closes. The session still locks like normal, but processes are not stopped.
 
-## Usage
+## Install
 
-Enable the plugin:
-
-```bash
-omarchy plugin enable io.github.tahler.lid-awake
+```sh
+omarchy plugin add https://github.com/Tahler/omarchy-plugin-lid-awake.git --enable
 ```
 
-Click the laptop icon in the bar to enable or disable the inhibitor. It stops automatically when the Omarchy shell exits (e.g. on reboot).
+The laptop icon appears in the top-right bar section. Click it to pause or resume the inhibitor. It pauses automatically when the Omarchy shell exits (e.g. on reboot).
+
+## Uninstall
+
+```sh
+omarchy plugin remove io.github.tahler.lid-awake
+```
+
+## Dependencies
+
+No external dependencies.

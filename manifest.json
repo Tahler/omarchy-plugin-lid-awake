@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "author": "tahler",
-  "description": "Session-scoped lid-close wake inhibitor with a bar control",
+  "description": "Prevents suspend when the laptop lid closes",
   "kinds": ["service", "bar-widget"],
   "entryPoints": {
     "service": "Service.qml",
@@ -13,7 +13,7 @@
   },
   "barWidget": {
     "displayName": "Stay Awake With Lid Closed",
-    "description": "Prevent suspend on lid close while preserving Omarchy's lock behavior",
+    "description": "Pause or resume suspension when the laptop lid closes",
     "category": "System",
     "allowMultiple": false,
     "defaultSection": "right"
