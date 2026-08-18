@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.tahler.lid-awake",
+  "name": "Stay Awake With Lid Closed",
+  "version": "1.0.0",
+  "author": "tahler",
+  "description": "Session-scoped lid-close wake inhibitor with a bar control",
+  "kinds": ["service", "bar-widget"],
+  "entryPoints": {
+    "service": "Service.qml",
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Stay Awake With Lid Closed",
+    "description": "Prevent suspend on lid close while preserving Omarchy's lock behavior",
+    "category": "System",
+    "allowMultiple": false,
+    "defaultSection": "right"
+  }
+}
