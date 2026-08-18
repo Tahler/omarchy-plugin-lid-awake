@@ -3,6 +3,7 @@
   "id": "io.github.tahler.lid-awake",
   "name": "Stay Awake With Lid Closed",
   "version": "1.0.0",
+  "license": "MIT",
   "author": "tahler",
   "description": "Session-scoped lid-close wake inhibitor with a bar control",
   "kinds": ["service", "bar-widget"],
