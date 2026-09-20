@@ -12,8 +12,8 @@ BarWidget {
     : "Lid-close wake service unavailable"
 
   function service() {
-    if (!bar || !bar.shell || typeof bar.shell.ensureService !== "function") return null
-    return bar.shell.serviceFor(serviceId) || bar.shell.ensureService(serviceId)
+    if (!bar || !bar.shell || typeof bar.shell.serviceFor !== "function") return null
+    return bar.shell.serviceFor(serviceId)
   }
 
   function toggle() {
